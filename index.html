@@ -73,30 +73,35 @@
           <b>- №1 -</b>
           <p class="advantages-description">Седона — не аттракцион для туристов, там течёт
             своя жизнь</p>
+        <img class="advantages-image" alt="Фото городка Седона">
+        <ul>
+          <li class="advantages-item">
+            <h4 class="advantages-title">Жильё</h4>
+            <p class="advantages-description">
+              Рекомендуем пожить в настоящем мотеле,
+              всё как в кино!
+            </p>
+          </li>
+          <li class="advantages-item">
+            <h4 class="advantages-title">Еда</h4>
+            <p class="advantages-description">Всегда заказывайте
+              топовый фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+          <li class="advantages-item">
+            <h4 class="advantages-title">Сувениры</h4>
+            <p class="advantages-description">Не только китайского,
+              но и настоящего местного производства!</p>
+          </li>
+        </ul>
+
         </li>
-        <li class="advantages-item">
-          <h3 class="advantages-title">Жильё</h3>
-          <p class="advantages-description">
-            Рекомендуем пожить в настоящем мотеле,
-            всё как в кино!
-          </p>
-        </li>
-        <li class="advantages-item">
-          <h3 class="advantages-title">Еда</h3>
-          <p class="advantages-description">Всегда заказывайте
-            топовый фирменный бургер, вы не разочаруетесь!</p>
-        </li>
-        <li class="advantages-item">
-          <h3 class="advantages-title">Сувениры</h3>
-          <p class="advantages-description">Не только китайского,
-            но и настоящего местного производства!</p>
-        </li>
-        <li class="advantages-item">
+        <li>
+          <img class="advantages-image" alt="Фото моста дъявола">
           <h3 class="advantages-title">Там есть мост дьявола</h3>
-          <b>- №2 -</b>
-          <p class="advantages-description">
-            Да, по нему можно пройти! Если вы осмелитесь, разумеется
-          </p>
+            <b>- №2 -</b>
+            <p class="advantages-description">
+              Да, по нему можно пройти! Если вы осмелитесь, разумеется
+            </p>
         </li>
         <li class="advantages-item">
           <h3 class="advantages-title">Небольшая площадь</h3>
@@ -120,7 +125,7 @@
       <p>Укажите предполагаемые даты поездки,
         и мы покажем вам лучшие предложения гостиниц в Седоне
       </p>
-      <button class="button" type="button" href="#">Поиск гостиницы в Седоне</button>
+      <a href="#">Поиск гостиницы в Седоне</a>
     </section>
     <article class="subscribe">
       <h2>Подпишитесь на рассылку</h2>
@@ -128,10 +133,10 @@
         Только полезная информация и никакого спама,
         честное бойскаутское!
       </p>
-      <form class="subscribe-form" method="post" action="">
+      <form class="subscribe-form" method="post" action="https://echo.htmlacademy.ru/">
         <label class="visually-hidden" for="subscribe-email">Email</label>
-        <input type="email" placeholder="Ваш e-mail" id="subscribe-email">
-        <button class="button" type="submit" href="#">Поиск гостиницы в Седоне</button>
+        <input type="email" placeholder="Ваш e-mail" name="email" id="subscribe-email">
+        <button class="button" type="submit">Подписаться</button>
       </form>
     </article>
   </main>
@@ -157,7 +162,9 @@
         <address class="address">
           <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
         </address>
-    <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
+    <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+      <img class="footer-image" alt="Разработано HTML Academy">
+    </a>
   </footer>
 </body>
 </html>
