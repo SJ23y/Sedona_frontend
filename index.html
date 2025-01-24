@@ -4,10 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="page-header">
-    <img src="" alt="sedona logo">
+    <img src="img/logo.svg" alt="sedona logo" width="139" height="70">
     <nav class="navigation">
       <ul class="navigation-list">
         <li class="navigation-item">
@@ -20,19 +21,20 @@
           <a class="navigation-link" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
-      <ul class="navigation-list navigation-user">
+      <ul class="navigation-user">
         <li class="navigation-item">
           <a class="navigation-link" href="#">
-            <span class="visually-hidden">Поиск</span>
+            <span class="visually-hidden">Поиск</span>            
           </a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="">
             <span class="visually-hidden">Избранное</span>
+            <span class="favorites-count">12</span>
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link button" href="#">
+          <a class="navigation-button" href="#">
             Хочу сюда
           </a>
         </li>
@@ -45,80 +47,65 @@
       <h2>
         <span class="visually-hidden">Добро пожаловать в великолепную Седону</span>
       </h2>
-      <ol>
-        <li>
-          <span class="visually-hidden">Welcome</span>
-        </li>
-        <li>
-          <span class="visually-hidden">to the gorgeous</span>
-        </li>
-        <li>
-          <span class="visually-hidden">Sedona</span>
-        </li>
-        <li>
-          <span class="visually-hidden">Because the Grand Canyon sucks</span>
-        </li>
-      </ol>
-      <p>Седона — небольшой городок в Аризоне,
-        заслуживающий большего!</p>
-      <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+      <p class="visually-hidden"> 
+        Welcome to the gorgeous Sedona Because the Grand Canyon sucks
+      </p>
+      <p class="introduction-strong">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+      <p class="introduction-common">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
     </section>
     <section class="advantages">
       <h2>
         <span class="visually-hidden">Преимущества</span>
-      </h2>
-      <ol class="advantages-list">
-        <li class="advantages-item">
+      </h2>     
+        
+        <div class="advantages-image-info">
           <h3 class="advantages-title">Настоящий городок</h3>
           <b>- №1 -</b>
-          <p class="advantages-description">Седона — не аттракцион для туристов, там течёт
-            своя жизнь</p>
-        <img class="advantages-image" alt="Фото городка Седона">
-        <ul>
-          <li class="advantages-item">
-            <h4 class="advantages-title">Жильё</h4>
-            <p class="advantages-description">
-              Рекомендуем пожить в настоящем мотеле,
-              всё как в кино!
-            </p>
-          </li>
-          <li class="advantages-item">
+          <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          <img src="img/sedona-photo.jpg" class="advantages-image" alt="Фото городка Седона" width="800" height="384">
+        </div>
+                      
+        <ul class="advantages-list">
+          <li class="advantages-item advantages-card-1">            
+              <h4 class="advantages-title">Жильё</h4>
+              <p class="advantages-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</li>
+          <li class="advantages-item advantages-card-2">
             <h4 class="advantages-title">Еда</h4>
-            <p class="advantages-description">Всегда заказывайте
-              топовый фирменный бургер, вы не разочаруетесь!</p>
+            <p class="advantages-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item advantages-card-3">
             <h4 class="advantages-title">Сувениры</h4>
             <p class="advantages-description">Не только китайского,
               но и настоящего местного производства!</p>
           </li>
         </ul>
-
-        </li>
-        <li>
-          <img class="advantages-image" alt="Фото моста дъявола">
-          <h3 class="advantages-title">Там есть мост дьявола</h3>
+          
+        <div class="advantages-image-info">
+            <img src="img/diablo-bridge.jpg" class="advantages-image" alt="Фото моста дъявола" width="800" height="384">
+            <h3 class="advantages-title">Там есть мост дьявола</h3>
             <b>- №2 -</b>
             <p class="advantages-description">
               Да, по нему можно пройти! Если вы осмелитесь, разумеется
             </p>
-        </li>
-        <li class="advantages-item">
-          <h3 class="advantages-title">Небольшая площадь</h3>
-          <b>- №3 -</b>
-          <p class="advantages-description">Все достопримечательности находятся очень близко</p>
-        </li>
-        <li class="advantages-item">
-          <h3 class="advantages-title"> Красивая дорога</h3>
-          <b>- №4 -</b>
-          <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </li>
-        <li class="advantages-item">
-          <h3 class="advantages-title">Мало туристов</h3>
-          <b>- №5 -</b>
-          <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
-        </li>
-      </ol>
+        </div>
+
+        <ul class="advantages-list">
+          <li class="advantages-item advantages-card-4">
+            <h3 class="advantages-title">Небольшая площадь</h3>
+            <b>- №3 -</b>
+            <p class="advantages-description">Все достопримечательности находятся очень близко</p>
+          </li>
+          <li class="advantages-item advantages-card-5">
+            <h3 class="advantages-title"> Красивая дорога</h3>
+            <b>- №4 -</b>
+            <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="advantages-item advantages-card-6">
+            <h3 class="advantages-title">Мало туристов</h3>
+            <b>- №5 -</b>
+            <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
+        </ul>
     </section>
     <section class="search">
       <h2>Заинересовались?</h2>
@@ -141,7 +128,7 @@
     </article>
   </main>
   <footer class="page-footer">
-    <h2 class="page-footer-title">Давайте дружить</h2>
+    <h2 class="visually-hidden">Давайте дружить</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="button" href="#">
@@ -163,7 +150,7 @@
           <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
         </address>
     <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-      <img class="footer-image" alt="Разработано HTML Academy">
+      <img src="img/htmlacademy-trademark.svg" class="footer-image" alt="Разработано HTML Academy" width="115" height="34">
     </a>
   </footer>
 </body>

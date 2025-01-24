@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Гостиницы Седоны</title>
+  <title>Гостиницы Седоны</title>  
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <header class="page-header">
-    <img src="" alt="sedona logo">
+    <img src="img/logo.svg" alt="sedona logo" width="139" height="70">
     <nav class="navigation">
       <ul class="navigation-list">
         <li class="navigation-item">
@@ -30,6 +31,7 @@
         <li class="navigation-item">
           <a class="navigation-link" href="">
             <span class="visually-hidden">Избранное</span>
+            <span class="favorites-count">12</span>
           </a>
         </li>
         <li class="navigation-item">
@@ -41,7 +43,8 @@
     </nav>
   </header>
 
-  <main class="main-inner">
+  <main class="main-inner">    
+   
     <header class="inner-header">
       <h1 class="inner-header-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
@@ -56,8 +59,7 @@
           </a>
         </li>
       </ul>
-    </header>
-    <section class="hotel-catalog">
+
       <h2>Список гостиниц с фильтрами</h2>
 
       <form class="hotel-filter" method="get" action="https://echo.htmlacademy.ru/">
@@ -133,9 +135,11 @@
             <span class="visually-hidden">Изменить максимальную цену</span>
           </button>
         </fieldset>
-        <button class="button" type="submit">Применить</button>
-        <button class="button" type="reset">Сбросить</button>
+        <button class="filter-submit-button" type="submit">Применить</button>
+        <button class="filter-reset-button" type="reset">Сбросить</button>
       </form>
+    </header>
+    <section class="hotel-catalog">      
 
       <div class="hotel-catalog-header">
         <h2>Результаты поиска</h2>
