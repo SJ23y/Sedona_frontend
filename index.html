@@ -10,7 +10,7 @@
   <header class="page-header">
     <nav class="navigation">
       <img class="logo" src="img/logo.svg" alt="sedona logo" width="139" height="70">      
-        <ul class="navigation-menu">
+        <ul class="navigation-menu navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="">Главная</a>
           </li>
@@ -21,24 +21,22 @@
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-user">
+        <ul class="navigation-user navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link navigation-icon" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="">
+            <a class="navigation-link navigation-icon" href="">
               <span class="visually-hidden">Избранное</span>
               <span class="favorites-count">12</span>
             </a>
-          </li>
-          <li class="navigation-item">
-            <a class="button button-secondary" href="#">
-              Хочу сюда
-            </a>
-          </li>
+          </li> 
         </ul>
+        <a class="button button-secondary navigation-button" href="#">
+          Хочу сюда
+        </a>
     </nav>
   </header>
 
@@ -46,17 +44,17 @@
     <h1 class="visually-hidden">Город Седона</h1>
 
     <section class="introduction">
-      <div class="introduction-promo"></div>
-      <div class="main-container">
-        <h2>
-          <span class="visually-hidden">Добро пожаловать в великолепную Седону</span>
+      <div class="introduction-promo">
+        <h2 class="visually-hidden">
+          Добро пожаловать в великолепную Седону
         </h2>
         <p class="visually-hidden">
           Welcome to the gorgeous Sedona Because the Grand Canyon sucks
         </p>
-        <p class="introduction-strong">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-        <p class="introduction-common">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
-      </div>  
+      </div>      
+      <p class="introduction-strong">Седона — небольшой городок в Аризоне,<br/> заслуживающий большего!</p>
+      <p class="introduction-common">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+      
     </section>
 
     <section class="advantages">
@@ -117,31 +115,31 @@
 
     <section class="search">
       <div class="main-container">
-        <h2 class="section-title">Заинересовались?</h2>
-        <p class="section-content">Укажите предполагаемые даты поездки,
+        <h2 class="section-title search-title">Заинересовались?</h2>
+        <p class="section-content search-content">Укажите предполагаемые даты поездки,
           и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <a href="#" class="button button-large button-secondary">Поиск гостиницы в Седоне</a>
+        <a href="#" class="button button-large button-secondary search-button">Поиск гостиницы в Седоне</a>
       </div>
     </section>
     <article class="primary-subscribe subscribe">
       <div class="main-container">
         <h2 class="section-title">Подпишитесь на рассылку</h2>
-        <p class="section-content">
+        <p class="section-content subscribe-content">
           Только полезная информация и никакого спама,
           честное бойскаутское!
         </p>
         <form class="subscribe-form" method="post" action="https://echo.htmlacademy.ru/">
           <label class="visually-hidden" for="subscribe-email">Email</label>
-          <input type="email" placeholder="Ваш e-mail" name="email" id="subscribe-email">
-          <button class="button button-large" type="submit">Подписаться</button>
+          <input class="subscribe-input" type="email" placeholder="Ваш e-mail" name="email" id="subscribe-email">
+          <button class="button button-large subscribe-button" type="submit">Подписаться</button>
         </form>
       </div>
     </article>
   </main>
   <footer class="page-footer">
     <div class="footer-container">
-      <h2 class="visually-hidden" hidden>Давайте дружить</h2>
+      <h2 class="visually-hidden">Давайте дружить</h2>
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a class="button" href="#">
