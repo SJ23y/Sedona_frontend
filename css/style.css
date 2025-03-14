@@ -1313,8 +1313,11 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 /* Modals */
-
 .modal-container {
+  display: none;
+}
+
+.modal-container.open {
   position: fixed;
   top: 0;
   left: 0;
@@ -1414,10 +1417,29 @@ input[type=number]::-webkit-outer-spin-button {
   padding: 0;
   align-self: center;
   font-weight: bold;
+  position: relative;
+}
+
+.modal-date-wrapper {
+  grid-column: 2 / -1;
+  position: relative;
+}
+
+.modal-success-message, .modal-error-message {
+  position: absolute;
+  bottom: -29px;
+  left: 0;
+  font-size: 16px;
+  line-height: 29px;
+  height: 29px;
+}
+
+.modal-error-message {
+  color: #FF5757;
 }
 
 .modal-date {
-  grid-column: 2 / -1;
+  width: 100%;  
   padding-left: 18px;
   padding-right: 51px;
   background-image: url('../img/catalog/calendar-icon.svg');
@@ -1433,6 +1455,52 @@ input[type=number]::-webkit-outer-spin-button {
   grid-column: 1 / -1;
   height: 60px;
   border-radius: 10px;  
+}
+
+.info-tooltip {  
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 50%;
+  right: 18px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-image: url('../img/catalog/info-tooltip.svg');
+  background-repeat: no-repeat;
+}
+
+.tooltip-text {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 28px;
+  transform: translateX(-50%);
+  width: 256px;
+  height: 143px;
+  border-radius: 10px;
+  background-color: #333333;
+  color: #FFFFFF;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
+  padding: 15px 18px 18px 22px;
+  font-size: 16px;
+  line-height: 20px;
+  box-sizing: border-box;
+  font-weight: 400;
+}
+
+.tooltip-text::before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: 50%;
+  height: 15px;
+  width: 15px;
+  transform: translateX(-50%) rotate(45deg);
+  background-color: inherit;
+}
+
+.info-tooltip:hover .tooltip-text {
+  display: block;
 }
 
 .qty-control {
