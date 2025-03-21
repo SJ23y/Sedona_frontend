@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Гостиницы Седоны</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
 </head>
 <body class="body">
 
   <header class="page-header">
     <nav class="navigation">
-      <img class="logo" src="img/logo.svg" alt="sedona logo" width="139" height="70">
+      <img class="logo" src="img/logo.svg" alt="sedona logo." width="139" height="64">
         <ul class="navigation-menu navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">Главная</a>
@@ -24,17 +25,17 @@
         </ul>
         <div class="navigation-user navigation-list">
             <a class="navigation-link navigation-icon" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewport="0 0 18 18" fill="none"><path fill="#000" d="m19.026 17.05-3.71-3.7c1.002-1.3 1.704-3 1.704-4.9 0-4.4-3.61-8-8.023-8C4.585.45.975 4.15.975 8.55c0 4.4 3.61 8 8.022 8 1.805 0 3.51-.6 4.914-1.7l3.71 3.7 1.405-1.5Zm-10.029-2.5c-3.309 0-6.017-2.7-6.017-6s2.708-6 6.017-6c3.31 0 6.017 2.7 6.017 6s-2.707 6-6.017 6Z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" fill="none"><path fill="#000" d="m19.026 17.05-3.71-3.7c1.002-1.3 1.704-3 1.704-4.9 0-4.4-3.61-8-8.023-8C4.585.45.975 4.15.975 8.55c0 4.4 3.61 8 8.022 8 1.805 0 3.51-.6 4.914-1.7l3.71 3.7 1.405-1.5Zm-10.029-2.5c-3.309 0-6.017-2.7-6.017-6s2.708-6 6.017-6c3.31 0 6.017 2.7 6.017 6s-2.707 6-6.017 6Z"/></svg>
               <span class="visually-hidden">Поиск</span>
             </a>
             <a class="navigation-link navigation-icon" href="">
-              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewport="0 0 18 18" fill="none">
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" fill="none">
                 <path fill="#000" d="M9.44 17c-.3 0-.6-.1-.8-.4-5.41-6.1-6.72-7.5-7.02-7.9A5.4 5.4 0 0 1 6.03 0c1.3 0 2.51.5 3.51 1.3a5.47 5.47 0 0 1 9.03 4.1c0 1.3-.5 2.5-1.3 3.4l-7.02 7.9c-.2.2-.4.3-.8.3ZM3.43 7.5c.3.4 3.5 4 6.11 6.9l6.22-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2.01.5-2.71 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.72-1.3c-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/></svg>
               <span class="favorites-count">12</span>
               <span class="visually-hidden">Избранное</span>
             </a>
             <a class="button button-secondary navigation-button" href="#">
-              Хочу сюда
+              Хочу сюда!
             </a>
         </div>
     </nav>
@@ -73,8 +74,8 @@
 
         <form class="hotel-filter" method="get" action="https://echo.htmlacademy.ru/">
           <fieldset class="hotel-filter-group">
+            <legend class="hotel-filter-title">Инфраструктура:</legend>
             <div class="hotel-filter-wrapper">
-              <legend class="hotel-filter-title">Инфраструктура:</legend>
               <ul class="hotel-filter-list">
                 <li class="hotel-filter-item">
                   <label class="control" for="infrastructure-1">
@@ -102,8 +103,8 @@
           </fieldset>
 
           <fieldset class="hotel-filter-group">
+            <legend class="hotel-filter-title">Тип жилья:</legend>
             <div class="hotel-filter-wrapper">
-              <legend class="hotel-filter-title">Тип жилья:</legend>
               <ul class="hotel-filter-list">
                 <li class="hotel-filter-item">
                   <label class="control">
@@ -131,8 +132,8 @@
           </fieldset>
 
           <fieldset class="hotel-filter-group">
+            <legend class="hotel-filter-title">Стоимость, ₽:</legend>
             <div class="hotel-filter-wrapper">
-              <legend class="hotel-filter-title">Стоимость, ₽:</legend>
               <input class="input-range input-from" type="number" name="price-from" id="inpit-from" value="0">
               <label class="control-label label-from" for="inpit-from">От</label>
               <input class="input-range input-to" type="number" name="price-to" value="9000" id="inpit-to">
@@ -160,7 +161,7 @@
       </div>
     </header>
 
-    <section class="hotel-catalog">
+    <section>
       <div class="catalog-container">
         <div class="hotel-catalog-header">
             <h2 class="visually-hidden" hidden>Результаты поиска</h2>
@@ -175,6 +176,7 @@
                   <li><a href="#">Сначала популярные</a></li>
                 </ul>
               </details>
+              <button class="visually-hidden" type="submit">Выбрать тип сортировки</button>
             </form>
             <h3 class="visually-hidden" hidden>Сортировка списка гостиниц</h3>
             <ul class="render-type-list">
@@ -200,7 +202,7 @@
         <ul class="hotel-list">
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
-              <img class="hotel-card-image" src="img/catalog/hotel-1.jpg" alt="Amara Resort & Spa" width="300" height="206">
+              <img class="hotel-card-image" src="img/catalog/hotel-1.jpg" alt="Amara Resort & Spa." width="300" height="206">
             </a>
             <a class="hotel-card-link" href="#">
               <h4 class="hotel-card-title">Amara Resort & Spa</h4>
@@ -216,7 +218,7 @@
           </li>
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
-              <img class="hotel-card-image" class="hotel-card-image" src="img/catalog/hotel-2.jpg" alt="Desert Quail Inn" width="300" height="206">
+              <img class="hotel-card-image" src="img/catalog/hotel-2.jpg" alt="Desert Quail Inn." width="300" height="206">
             </a>
             <a class="hotel-card-link" href="#">
               <h4 class="hotel-card-title">Desert Quail Inn</h4>
@@ -232,7 +234,7 @@
           </li>
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
-              <img class="hotel-card-image" src="img/catalog/hotel-3.jpg" alt="Villas at Poco Diablo" width="300" height="206">
+              <img class="hotel-card-image" src="img/catalog/hotel-3.jpg" alt="Villas at Poco Diablo." width="300" height="206">
             </a>
             <a class="hotel-card-link" href="#">
               <h4 class="hotel-card-title">Villas at Poco Diablo</h4>
@@ -248,7 +250,7 @@
           </li>
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
-              <img class="hotel-card-image" src="img/catalog/hotel-4.jpg" alt="GreenTree Inn" width="300" height="206">
+              <img class="hotel-card-image" src="img/catalog/hotel-4.jpg" alt="GreenTree Inn." width="300" height="206">
             </a>
             <a class="hotel-card-link" href="#">
               <h4 class="hotel-card-title">GreenTree Inn</h4>
@@ -309,7 +311,7 @@
       <div class="main-container">
         <h2 class="section-title">Подпишитесь на рассылку</h2>
         <p class="section-content subscribe-content">
-          Только полезная информация и никакого спама,
+          Только полезная информация и никакого спама,<br>
           честное бойскаутское!
         </p>
         <form class="subscribe-form" method="post" action="https://echo.htmlacademy.ru/">
@@ -339,13 +341,13 @@
             </li>
             <li >
               <a class="footer-social-item" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" fill="none"><g clip-path="url(#a)"><path class="social-icon" fill="#83B3D3" d="M7 0C4.8 0 3 1.8 3 4v2H0v4h3v8h4v-8h3V6H7V4h3V0H7Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h10v18H0z"/></clipPath></defs></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" fill="none"><g clip-path="url(#b)"><path class="social-icon" fill="#83B3D3" d="M7 0C4.8 0 3 1.8 3 4v2H0v4h3v8h4v-8h3V6H7V4h3V0H7Z"/></g><defs><clipPath id="b"><path fill="#fff" d="M0 0h10v18H0z"/></clipPath></defs></svg>
                 <span class="visually-hidden">Facebook</span>
               </a>
             </li>
             <li>
               <a class="footer-social-item" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="none"><g clip-path="url(#a)"><path class="social-icon" fill="#83B3D3" d="M17 0H2.9C1.2 0 0 1.5 0 3.2v9.5C0 14.5 1.2 16 2.9 16h14.3c1.5 0 2.9-1.5 2.9-3.2V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8 7 11.8Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h20v16H0z"/></clipPath></defs></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="none"><g clip-path="url(#c)"><path class="social-icon" fill="#83B3D3" d="M17 0H2.9C1.2 0 0 1.5 0 3.2v9.5C0 14.5 1.2 16 2.9 16h14.3c1.5 0 2.9-1.5 2.9-3.2V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8 7 11.8Z"/></g><defs><clipPath id="c"><path fill="#fff" d="M0 0h20v16H0z"/></clipPath></defs></svg>
                 <span class="visually-hidden">Youtube</span>
               </a>
             </li>
